@@ -1,0 +1,31 @@
+.wp-site-blocks > * + * {
+  margin-top: unset !important;
+}
+
+.wp-block-site-title {
+  display: none;
+}
+
+.wp-block-post {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+[class^='wp-container-'] > * + * {
+  margin-top: unset !important;
+}
+
+[class^='wp-container'] .has-text-align-center {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.wp-block-post-title {
+  display: none;
+}
+
+// WP Reset
+#prakataKepalaSekolah[class^='wp-container-'] > * + * {
+  margin-top: unset !important;
+}

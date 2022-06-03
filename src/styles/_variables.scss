@@ -1,0 +1,44 @@
+$breakpoints: (
+  'xs': 0,
+  'sm': 574px,
+  'md': 766px,
+  'lg': 990px,
+  'xl': 1180px,
+  'xxl': 1400px
+);
+
+$colors: (
+  'background': #f9fafb,
+  'background-alt': #f3f4f6,
+  'headline': #193c5c,
+  'text': #667c90,
+  // 'text': #8496a6,
+  'text-alt': #9ca3af,
+  'primary': #22c55e,
+  'primary-dark': #16a34a,
+  'border': #e9ecef
+);
+
+$fontSizes: (
+  'xs': 12px,
+  'sm': 14px,
+  'md': 16px,
+  'lg': 18px,
+  'xl': 20px,
+  // Headings
+  'h1': 32px,
+  'h2': 28px,
+  'h3': 24px,
+  'h4': 20px,
+  'h5': 16px,
+  'h6': 14px
+);
+
+$fontWeights: (
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'bold': 700
+);
+
+$columns: (100%, 50%, 33.3333%, 25%, 20%, 16.6666%, 14.2857%, 12.5%, 11.1111%, 10%, 9.0909%, 8.3333%);

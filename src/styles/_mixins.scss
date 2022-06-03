@@ -1,0 +1,19 @@
+@mixin breakpoint($name: 'min', $key) {
+  @if $name == 'min' {
+    @media screen and (min-width: map-get($breakpoints, $key)) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: map-get($breakpoints, $key)) {
+      @content;
+    }
+  }
+}
+
+@mixin transition($target: all) {
+  transition: $target 0.3s ease-in-out;
+}
+
+@mixin rounded($radius: 8px) {
+  border-radius: $radius;
+}

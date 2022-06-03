@@ -1,0 +1,25 @@
+{
+  "name": "yapenhas-official-theme",
+  "version": "1.0.0",
+  "description": "SMP IT & SMK Boedi Luhur adalah lembaga pendidikan dibawah naungan Yayasan Pendidikan H. Sudarto (YAPENHAS) yang berdiri sejak tahun 2007 berdomisili di Desa Mangunjaya Kecamatan Tambun Selatan Kabupaten Bekasi.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node ./scripts/watch.js",
+    "build": "node ./scripts/build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.10",
+    "esbuild": "^0.14.42",
+    "esbuild-sass-plugin": "^2.2.6",
+    "postcss": "^8.4.14",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.9"
+  }
+}
