@@ -9,9 +9,11 @@ const NavbarInitiator = {
       navbarToggler.classList.toggle('is-open');
       body.classList.toggle('overflow-hidden');
     });
+
+    NavbarInitiator.initDropdown();
   },
 
-  initDropdown: function () {
+  initDropdown: () => {
     const dropdownToggler = document.querySelectorAll('[navbar-menu-has-dropdown]') || null;
 
     if (!dropdownToggler) return;
