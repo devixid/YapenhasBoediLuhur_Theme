@@ -13,7 +13,9 @@
 }
 
 [class^='wp-container-'] > * + * {
-  margin-top: unset !important;
+  // [class^='wp-container-'] > * {
+  margin-top: inherit !important;
+  margin-bottom: inherit !important;
 }
 
 [class^='wp-container'] .has-text-align-center {
@@ -22,7 +24,8 @@
 }
 
 .wp-block-post-title {
-  display: none;
+  // display: none;
+  font-size: get-font-size('h3');
 }
 
 // WP Reset

@@ -8,6 +8,7 @@ if ( ! function_exists( 'yapenhasboediluhur_theme_support' ) ) :
 
 		// Enqueue editor styles.
 		$editorStyle = get_template_directory_uri() . '/dist/styles/root.css';
+		// $editorStyle = get_template_directory_uri() . '/dist/styles/tailwind.css';
 
 		add_editor_style( $editorStyle );
 	}
@@ -21,6 +22,7 @@ if (!function_exists('yapenhasboediluhur_theme_scripts')):
 	function yapenhasboediluhur_theme_scripts() {
 		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'yapenhasboediluhur-theme-style', get_template_directory_uri() . '/dist/styles/root.css', array(), wp_get_theme()->get( 'Version' ) );
+		// wp_enqueue_style( 'yapenhasboediluhur-theme-style', get_template_directory_uri() . '/dist/styles/tailwind.css', array(), wp_get_theme()->get( 'Version' ) );
 	
 		// Enqueue theme scripts.
 		wp_enqueue_script( 'yapenhasboediluhur-theme-script', get_template_directory_uri() . '/dist/js/main.js', array(), wp_get_theme()->get( 'Version' ), true );

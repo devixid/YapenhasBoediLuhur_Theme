@@ -31,7 +31,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 1.5rem;
 }
@@ -43,4 +43,19 @@ h4,
 h5,
 h6 {
   color: get-color('headline');
+  font-weight: get-font-weight('bold');
+  letter-spacing: -0.025rem;
+}
+
+h1 {
+  font-size: get-font-size('h1');
+}
+
+h2 {
+  font-size: get-font-size('h2');
+  line-height: 34px;
+}
+
+h3 {
+  font-size: get-font-size('h3');
 }
