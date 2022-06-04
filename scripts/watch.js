@@ -25,7 +25,7 @@ ESBuild.build({
   ]
 })
   .then(() => {
-    console.log('Build complete');
+    console.log('Compiled successfully');
   })
   .catch((err) => {
     console.error(err);

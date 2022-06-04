@@ -493,7 +493,7 @@ $hero-height: 550px;
   }
 }
 
-// Post List
+// Post
 .post {
   &-card-index {
     margin: 0.5rem 0;
@@ -561,6 +561,48 @@ $hero-height: 550px;
           }
         }
       }
+    }
+  }
+}
+
+// Footer
+
+// Dokumentasi video
+#vCardParent {
+  &,
+  &.wp-block-columns {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0.75rem;
+    align-items: center;
+
+    @include breakpoint('min', 'sm') {
+      grid-template-columns: repeat(2, calc(50% - 0.75rem));
+    }
+
+    @include breakpoint('min', 'md') {
+      grid-template-columns: repeat(3, calc(33.3333333333% - 0.75rem));
+    }
+
+    > .wp-block-column {
+      max-height: 250px;
+      margin-top: 0 !important;
+      margin-left: 0 !important;
+    }
+
+    .wp-block-column .wp-block-video-embed,
+    .wp-block-column .wp-block-embed,
+    .wp-block-column .wp-block-embed__wrapper {
+      height: 250px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .wp-block-column .wp-block-embed__wrapper > iframe {
+      height: 100%;
+      @include rounded();
     }
   }
 }
