@@ -326,7 +326,9 @@
   }
 }
 
+// ------------------------------------------------------------
 // Hero
+// ------------------------------------------------------------
 $hero-height: 550px;
 
 .hero-slider {
@@ -493,7 +495,9 @@ $hero-height: 550px;
   }
 }
 
+// ------------------------------------------------------------
 // Post
+// ------------------------------------------------------------
 .post {
   &-card-index {
     margin: 0.5rem 0;
@@ -565,9 +569,59 @@ $hero-height: 550px;
   }
 }
 
+// ------------------------------------------------------------
 // Footer
+// ------------------------------------------------------------
+.footer {
+  background-color: get-color('primary');
 
-// Dokumentasi video
+  &--container {
+    @extend .container;
+
+    h2 {
+      color: get-color('background');
+    }
+
+    p {
+      color: get-color('background-alt');
+    }
+
+    a {
+      color: get-color('background-alt');
+    }
+  }
+
+  &__list {
+    list-style-position: inside;
+
+    > li {
+      margin: 0.5rem 0;
+      color: get-color('background-alt');
+    }
+
+    &__sublist {
+      margin-left: 1rem;
+
+      > li {
+        margin: 0.5rem 0;
+        color: get-color('background-alt');
+      }
+    }
+  }
+
+  &--copyright {
+    background-color: #000;
+    color: get-color('background-alt');
+
+    a {
+      color: get-color('background-alt');
+    }
+  }
+}
+
+// ------------------------------------------------------------
+// Dokumentasi Video
+// ------------------------------------------------------------
 #vCardParent {
   &,
   &.wp-block-columns {
@@ -603,6 +657,52 @@ $hero-height: 550px;
     .wp-block-column .wp-block-embed__wrapper > iframe {
       height: 100%;
       @include rounded();
+    }
+  }
+}
+
+// ------------------------------------------------------------
+// Button
+// ------------------------------------------------------------
+.button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+
+  &-primary {
+    background-color: get-color('primary');
+    color: get-color('background');
+
+    &:hover,
+    &:focus {
+      background-color: get-color('primary-dark');
+      color: get-color('background');
+    }
+  }
+}
+
+// ------------------------------------------------------------
+// Header Jurusan
+// ------------------------------------------------------------
+.jurusan {
+  &-header {
+    > .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin-bottom: 2rem;
+
+      @include breakpoint('min', 'md') {
+        flex-direction: row;
+      }
+
+      > #foto {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+      }
     }
   }
 }
