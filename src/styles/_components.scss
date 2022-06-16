@@ -508,7 +508,8 @@ $hero-height: 550px;
 
     .post {
       &-title {
-        font-size: get-font-size('h4');
+        font-size: get-font-size('h5');
+        line-height: 1.25;
 
         > a {
           text-decoration: none;
@@ -531,7 +532,7 @@ $hero-height: 550px;
       }
 
       &-image {
-        max-height: 120px;
+        max-height: 125px;
         margin-top: 0;
         height: 100%;
 
@@ -548,8 +549,8 @@ $hero-height: 550px;
         }
 
         &-parent {
-          max-height: 120px;
-          height: 120px;
+          max-height: 125px;
+          height: 125px;
           max-width: 150px;
           background-image: url('https://via.placeholder.com/215x215?text=Post+Image');
           background-position: center;

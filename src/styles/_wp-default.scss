@@ -32,3 +32,55 @@
 #prakataKepalaSekolah[class^='wp-container-'] > * + * {
   margin-top: unset !important;
 }
+
+.news-wrapper {
+  list-style-type: none;
+
+  > ul {
+    > li {
+      padding: 0.5rem 0;
+
+      > h2 {
+        font-size: 1.5rem;
+        > a {
+          text-decoration: none;
+          color: get-color('headline');
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      > .wp-block-post-date {
+        padding-top: 0.5rem;
+      }
+
+      .wp-block-post-featured-image > a > img {
+        border-radius: 0.5rem;
+      }
+
+      > .wp-block-post-excerpt {
+        > .wp-block-post-excerpt__excerpt {
+          margin: 0.5rem 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          word-wrap: break-word;
+          word-break: break-word;
+        }
+
+        > .wp-block-post-excerpt__more-text > a {
+          color: get-color('primary');
+
+          &:hover {
+            color: get-color('primary-dark');
+          }
+        }
+      }
+    }
+  }
+}
