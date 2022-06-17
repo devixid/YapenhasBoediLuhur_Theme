@@ -669,6 +669,9 @@ $hero-height: 550px;
   display: inline-block;
   padding: 1rem 1.5rem;
   text-decoration: none;
+  border: 0;
+  font-size: 0.9rem;
+  cursor: pointer;
 
   &-primary {
     background-color: get-color('primary');
@@ -706,4 +709,59 @@ $hero-height: 550px;
       }
     }
   }
+}
+
+// ------------------------------------------------------------
+// Alumni
+// ------------------------------------------------------------
+.alumni {
+  &--card {
+    border: 1px solid get-color('border');
+  }
+}
+
+// ------------------------------------------------------------
+// Modal
+// ------------------------------------------------------------
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba($color: #000, $alpha: 0.5);
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  @include breakpoint('min', 'md') {
+    align-items: center;
+  }
+
+  &__content {
+    background-color: get-color('background');
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  &__close {
+    border: 0;
+    background-color: transparent;
+    color: get-color('headline');
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+#whatsappButtonWrapper {
+  position: fixed;
+  z-index: 40;
+  bottom: 1rem;
+  right: 1rem;
 }

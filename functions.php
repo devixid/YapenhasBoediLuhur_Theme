@@ -8,7 +8,6 @@ if ( ! function_exists( 'yapenhasboediluhur_theme_support' ) ) :
 
 		// Enqueue editor styles.
 		$editorStyle = get_template_directory_uri() . '/dist/styles/root.css';
-		// $editorStyle = get_template_directory_uri() . '/dist/styles/tailwind.css';
 
 		add_editor_style( $editorStyle );
 	}
@@ -22,7 +21,6 @@ if (!function_exists('yapenhasboediluhur_theme_scripts')):
 	function yapenhasboediluhur_theme_scripts() {
 		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'yapenhasboediluhur-theme-style', get_template_directory_uri() . '/dist/styles/root.css', array(), wp_get_theme()->get( 'Version' ) );
-		// wp_enqueue_style( 'yapenhasboediluhur-theme-style', get_template_directory_uri() . '/dist/styles/tailwind.css', array(), wp_get_theme()->get( 'Version' ) );
 	
 		// Enqueue theme scripts.
 		wp_enqueue_script( 'yapenhasboediluhur-theme-script', get_template_directory_uri() . '/dist/js/main.js', array(), wp_get_theme()->get( 'Version' ), true );
@@ -40,6 +38,10 @@ if (!function_exists('yapenhasboediluhur_head')):
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+			<link rel="shortcut icon" href="https://assets.yapenhasboediluhur.sch.id/img/logo.png" />
+			 <!--[if IE]>
+    	<link href="https://assets.yapenhasboediluhur.sch.id/img/logo.png" rel="shortcut icon" />
+    	<![endif]-->
 		<?php
 	}
 	add_action( 'wp_head', 'yapenhasboediluhur_head' );
