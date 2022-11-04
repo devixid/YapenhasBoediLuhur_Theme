@@ -574,7 +574,7 @@ $hero-height: 550px;
 // Footer
 // ------------------------------------------------------------
 .footer {
-  background-color: get-color('primary');
+  background-color: get-color('headline');
 
   &--container {
     @extend .container;
